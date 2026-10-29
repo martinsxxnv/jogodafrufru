@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>naty tá conectada 💙💛</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;padding:20px;background:#d9f3ff;color:#294b60;font-family:Arial,sans-serif;background-image:radial-gradient(white 2px,transparent 2px);background-size:20px 20px}
+main{max-width:750px;margin:15px auto;background:#fffdf2;border:3px solid #294b60;border-radius:20px;padding:25px;box-shadow:6px 6px #294b60}
+h1{font-size:clamp(35px,8vw,60px);color:#286b91}
+h2{color:#286b91}
+button{padding:12px;margin:5px;border:2px solid #294b60;border-radius:12px;background:#ffe77a;color:#294b60;font-weight:bold;cursor:pointer}
+button:hover{background:#bdeaff}
+.note{background:#fff0a9;padding:18px;border:2px dashed #c8ad45;border-radius:10px;margin:15px 0;line-height:1.7}
+.page{display:none}.page.active{display:block}
+.card{display:block;width:100%;text-align:left;background:#fff;padding:16px;margin:12px 0;line-height:1.5}
+.small{font-size:13px;color:#56819a}
+</style>
+</head>
+<body>
+<main>
+<p>✂️ cantinho da cami e da naty 💛</p>
+
+<section id="inicio" class="page active">
+<p class="small">feito pela cami, com carinho 💌</p>
+<h1>naty tá<br>conectada! 💙</h1>
+<p>oi, cachinhos 💛 fiz isso aqui pra tu ter uma coisinha minha aí contigo, mesmo de longe. tem uns bilhetinhos, umas perguntinhas e uma cartinha no final. não repara se não ficou perfeito KKKKK, eu só queria fazer algo diferente pra gente.</p>
+<div class="note"><b>📌 um recadinho meu</b><br>eu gosto dessas coisinhas nossas, sabe? até quando a gente só fica em call sem fazer nada demais. queria que hoje a gente tivesse mais uma lembrança pra guardar.</div>
+<button onclick="abrir('bilhetes')">abrir os bilhetinhos 💌</button>
+<button onclick="abrir('quiz')">bora jogar 🎮</button>
+</section>
+
+<section id="bilhetes" class="page">
+<h2>abre aí, cachinhos ✉️</h2>
+<p>vai clicando nos cartões pra ver o que tem dentro. fiz pensando em tu, tá? 🥹</p>
+<button class="card" onclick="revelar(this,'queria poder tá aí contigo nessas horas, mas enquanto isso a gente vai dando um jeitinho, né? uma call, uma mensagem, qualquer coisinha tua já deixa meu dia diferente. 💙')">🫧 quando bater saudade...<br><span class="small">clica aqui pra abrir</span></button>
+<button class="card" onclick="revelar(this,'eu amo que até as coisas mais bobinhas viram coisa nossa. gosto de conversar contigo, de rir contigo e de ter tu na minha vida, neneca. 💛')">🌻 uma coisa que eu amo na gente<br><span class="small">clica aqui pra abrir</span></button>
+<button class="card" onclick="revelar(this,'continuar escolhendo uma à outra, conversar quando alguma coisa incomodar e cuidar do nosso namoro. a gente vai aprendendo juntas, tá?')">🧸 um combinado nosso<br><span class="small">clica aqui pra abrir</span></button>
+<button class="card" onclick="revelar(this,'tu é muito especial pra mim, Naty. às vezes eu fico com vergonha de falar umas coisas, então fiz esse site pra tentar mostrar um pouquinho do tanto que eu gosto de tu. 💛')">⭐ um recadinho pra minha cachinhos<br><span class="small">clica aqui pra abrir</span></button>
+<button onclick="abrir('quiz')">bora pro quiz →</button>
+<button onclick="abrir('inicio')">voltar ↶</button>
+</section>
+
+<section id="quiz" class="page">
+<h2>quiz da gente 💫</h2>
+<p>sem pesquisar, hein KKKKKK. é só pra gente se divertir!</p>
+<div id="pergunta"></div>
+<div id="respostas"></div>
+<p id="resultado"></p>
+<button id="proxima" onclick="proxima()" style="display:none">próxima →</button>
+<button onclick="abrir('carta')">ir pra cartinha 💌</button>
+</section>
+
+<section id="carta" class="page">
+<p class="small">última parte, vai 🥹</p>
+<h2>uma cartinha pra tu 💌</h2>
+<p>essa aqui eu queria que tu lesse até o final, tá?</p>
+<button id="abrirCarta" onclick="document.getElementById('textoCarta').style.display='block';this.style.display='none'">abrir, vai 💌</button>
+<div id="textoCarta" style="display:none">
+<div class="note">
+<p>pra minha cachinhos dourados,</p>
+<p>eu fiz isso aqui porque queria fazer alguma coisa diferente pra tu, uma coisinha que fosse nossa. não sei se ficou do jeito que eu imaginei, mas fiz com carinho de verdade. queria que tu pudesse abrir e sentir um pouquinho do amor que eu tenho por ti, mesmo eu estando longe.</p>
+<p>eu amo ter tu nos meus dias, amo nossas conversas, nossas besteiras e até esses momentos em que a gente fica com saudade uma da outra. eu quero continuar vivendo um monte de coisa contigo, criando nossas lembranças e cuidando da gente.</p>
+<p>eu te amo muitaaaaao, minha cachinhos. tu não tem noção do quanto tu é importante pra mim, sério. sou muito feliz por ter tu na minha vida e quero viver tanta coisa contigo ainda. queria poder tá pertinho de tu agora, mas enquanto isso vou dando meus jeitinhos de te lembrar o quanto tu é amada. 💗💗</p>
+<p>agora me responde, vai: <b>qual lembrança nossa tu guarda com mais carinho? e qual coisa tu tá doida pra viver comigo ainda?</b></p>
+<p>eu te amo, minha neneca.<br><b>da tua Cami 💙💛</b></p>
+</div>
+</div>
+<button onclick="abrir('inicio')">voltar ao início ↶</button>
+</section>
+<p style="text-align:center">feito pela cami pra cachinhos, com amor e saudade 💙💛</p>
+</main>
+
+<script>
+function abrir(id){
+ document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+ document.getElementById(id).classList.add('active');
+ window.scrollTo(0,0);
+}
+function revelar(botao,texto){
+ botao.innerHTML=texto;
+}
+const perguntas=[
+ {p:'qual é a data do nosso namoro?',r:['20/06 💛','24/09','31/12'],c:0},
+ {p:'qual apelido meu pra tu aparece direto?',r:['cachinhos dourados ✨','capitã marvel','dona do wi-fi'],c:0},
+ {p:'por que eu fiz esse site?',r:['pra fazer uma coisinha nossa 💙','pra prova da escola','pra ganhar dinheiro'],c:0},
+ {p:'o que a gente faz depois do quiz?',r:['conversar e criar mais lembranças 🫶','fazer uma prova','fechar tudo'],c:0}
+];
+let indice=0;
+function desenhar(){
+ let q=perguntas[indice];
+ document.getElementById('pergunta').innerHTML='<h3>'+(indice+1)+' de '+perguntas.length+'</h3><p>'+q.p+'</p>';
+ document.getElementById('respostas').innerHTML='';
+ document.getElementById('resultado').innerHTML='';
+ document.getElementById('proxima').style.display='none';
+ q.r.forEach((r,i)=>{
+  let b=document.createElement('button');
+  b.style.display='block';b.style.width='100%';b.textContent=r;
+  b.onclick=()=>{
+   document.querySelectorAll('#respostas button').forEach(x=>x.disabled=true);
+   document.getElementById('resultado').textContent=i===q.c?'acertouuu KKKKK 💛':'KKKKK quase! '+(q.c===0?'a resposta é '+q.r[q.c]:'vamos pra próxima!');
+   document.getElementById('proxima').style.display='inline-block';
+  };
+  document.getElementById('respostas').appendChild(b);
+ });
+}
+function proxima(){
+ indice++;
+ if(indice>=perguntas.length){
+  document.getElementById('pergunta').innerHTML='<h2>acabouuu! 💙💛</h2><p>agora escolhe uma pergunta pra gente responder na call KKKKK.</p>';
+  document.getElementById('respostas').innerHTML='';
+  document.getElementById('resultado').textContent='';
+  document.getElementById('proxima').style.display='none';
+ }else desenhar();
+}
+desenhar();
+</script>
+</body>
+</html>
